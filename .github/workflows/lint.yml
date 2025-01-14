@@ -25,4 +25,4 @@ jobs:
 
     - name: Run lint
       run: |
-        uv -m invoke lint
+        uv invoke lint
