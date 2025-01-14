@@ -1,6 +1,13 @@
 name: Lint
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+  pull_request_target:
+    branches:
+      - main
 
 env:
   PYTHON_VERSION: '3.13.1'
